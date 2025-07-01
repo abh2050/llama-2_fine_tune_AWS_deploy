@@ -34,11 +34,11 @@ venv.bak/
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# PyCharm
+# IDE
 .idea/
-
-# VS Code
 .vscode/
+*.swp
+*.swo
 
 # macOS
 .DS_Store
@@ -57,10 +57,12 @@ aws-credentials*
 credentials
 config
 
-# Model files (if too large)
-# models/*.bin
-# models/*.pt
-# models/*.safetensors
+# Model files (if too large) - commented out to include our models
+# models/
+# *.bin
+# *.safetensors
+# *.pt
+# *.pth
 
 # Logs
 *.log
@@ -70,8 +72,6 @@ log/
 # Temporary files
 *.tmp
 *.temp
-*.swp
-*.swo
 
 # Cache
 .cache/
