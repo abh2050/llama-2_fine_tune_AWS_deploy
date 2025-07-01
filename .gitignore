@@ -1,0 +1,87 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# AWS Keys and Secrets
+*.pem
+*.key
+aws-credentials*
+.aws/
+credentials
+config
+
+# Model files (if too large)
+# models/*.bin
+# models/*.pt
+# models/*.safetensors
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Cache
+.cache/
+cache/
+
+# Node modules (if any)
+node_modules/
+
+# Docker
+.dockerignore
+
+# Git
+.gitconfig
