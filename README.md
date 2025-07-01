@@ -1,4 +1,4 @@
-# LLaMA2 Inference Service
+# LLama2 Inference Service
 
 A complete end-to-end solution for training, fine-tuning, and deploying LLaMA2 models with production-ready inference capabilities.
 
