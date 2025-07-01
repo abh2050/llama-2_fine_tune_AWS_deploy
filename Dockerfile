@@ -21,12 +21,10 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
-# Copy the source code into the container
+# Copy the source code and models into the container
 COPY src/ ./src/
 COPY scripts/ ./scripts/
-
-# Create models directory
-RUN mkdir -p ./models
+COPY models/ ./models/
 
 # Create non-root user for security
 RUN useradd --create-home --shell /bin/bash app && \

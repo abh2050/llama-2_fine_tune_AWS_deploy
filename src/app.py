@@ -19,19 +19,18 @@ def get_model():
     global model_inference
     if model_inference is None:
         try:
-            # Model configuration
-            model_path = "./models/llama2-claude-lora"
-            s3_bucket = os.getenv('MODEL_BUCKET', 'llama2-poc-llama2-models-604770467350')
-            s3_prefix = os.getenv('MODEL_S3_PREFIX', 'models/llama2-claude-lora/')
+            # Model configuration - use your actual trained model
+            model_path = "./models/dialogpt-claude-lora-cpu"
             
             logger.info("Starting model initialization...")
+            logger.info(f"Using model path: {model_path}")
             
-            # Download model from S3 if not present locally
+            # Check if model exists locally
             if not os.path.exists(model_path):
-                logger.info(f"Downloading model from S3: {s3_bucket}/{s3_prefix}")
-                download_model_from_s3(s3_bucket, s3_prefix, model_path)
+                logger.error(f"Model not found at {model_path}")
+                raise FileNotFoundError(f"Model not found at {model_path}")
             
-            # Initialize model inference
+            # Initialize model inference with your trained model
             logger.info("Initializing model inference...")
             model_inference = ModelInference(model_path)
             logger.info("Model loaded successfully")
