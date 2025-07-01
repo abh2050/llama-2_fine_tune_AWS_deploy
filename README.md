@@ -461,16 +461,6 @@ This inference service was designed to work seamlessly with models trained using
 5. **Testing & Validation** → Run comprehensive test suite
 6. **Production Ready** → Service available for inference requests
 
-### Model Performance Metrics
-
-Based on our training and deployment:
-
-- **Training Time**: ~2-4 hours (7B model, LoRA, single GPU)
-- **Model Size**: ~14GB (base) + ~200MB (LoRA adapters)  
-- **Inference Latency**: ~2-5 seconds per request (CPU), ~0.5-1s (GPU)
-- **Memory Usage**: ~8-16GB RAM for inference
-- **Throughput**: ~10-20 requests/minute (depending on hardware)
-
 ## ⚡ Performance Considerations
 
 ### Hardware Requirements
