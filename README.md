@@ -609,18 +609,6 @@ docker stop llama2-service && docker rm llama2-service
 docker run -d --name llama2-service -p 8000:8000 your-registry/llama2-inference:latest
 ```
 
-## 📄 License
-
-MIT License - see LICENSE file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests
-5. Submit a pull request
-
 ## Support
 
 For issues and questions, please open a GitHub issue or contact the maintainers.
